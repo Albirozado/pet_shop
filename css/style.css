@@ -1,0 +1,498 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: .2s linear;
+
+
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "futurabook";
+    src: url(/fonts/futura/Futura\ Book\ font.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ordinare";
+    src: url(/fonts/odin_rounded/Odin\ Rounded\ -\ Bold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: "futurabook";
+    background-color: #FCFCFC;
+
+}
+section{
+    width: 1366px;
+    max-width: 100%;
+    margin:0 auto;
+    padding: 0 3%;
+}
+html::-webkit-scrollbar{
+    width: .4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #D0562F;
+    border-radius: 5rem;
+}
+.menu{
+    color: #0D0801;
+    font-size: 2rem;
+    display: none;
+
+
+}
+.titulo_principal{
+    color: #2F1E0C;
+    font-family: "ordinare";
+    text-align: center;
+    font-size: 2.125rem;
+    margin: 1rem 0;
+}
+.primiro_container a{
+    color: #0D0801;
+}
+
+.primiro_container img{
+    width: 6.5rem;
+}
+
+.primiro_container nav a{
+    color: #0D0801;
+    font-size: 1.25rem;
+    padding: 0.5rem 0.8rem;
+    margin-left: 0.5rem;
+    position: relative;
+
+}
+.primiro_container nav a::before{
+    content: "";
+    height: 0.3rem;
+    width: 0;
+    position: absolute;
+    background-color: #D0562F;
+    left: 0;
+    top: 2.3rem;
+    border-radius: 0.2rem;
+    transition: 0.3s;
+    top: 2.5rem;
+
+
+    
+}
+
+.primiro_container nav a:hover::before{
+    width: 100%;
+
+
+}
+.primiro_container nav .especial::before{
+    content: "";
+    height: 0.3rem;
+    width: 100%;
+    position: absolute;
+    background-color: #D0562F;
+    left: 0;
+    top: 2.5rem;
+    border-radius: 0.2rem;
+}
+
+
+
+
+
+.primiro_container header nav{
+    width: 100%;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 3%;
+    background-color: #FCFCFC;
+    z-index: 10000;
+
+    
+    
+}
+.primiro_container{
+    background: url(/imagens/Untitled-1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+}
+.primiro_container .content{
+    position: absolute;
+    top: 42%;
+    transform: translateY(-42);
+    z-index: 1;
+}
+.primiro_container .content h2{
+    font-weight: normal;
+    font-family: "futura";
+    font-size: 2rem;
+    line-height: 2.75rem;
+    font-weight: bold;
+
+
+
+}
+.primiro_container .content a{
+    padding: 0.4rem 1.3rem;
+    font-size: 1.25rem;
+    background-color: #D0562F;
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #FCFCFC;
+    border-radius: 0.313rem;
+
+}
+
+
+.primiro_container .content a:hover{
+    background-color: #82351d;
+
+}
+
+.segundo_container .container .service .image{
+    /*height: 23rem;*/
+    overflow: hidden;
+
+
+}
+
+.segundo_container .container .service h4{
+    font-family: "futura";
+    font-size: 1.25rem;
+}
+.segundo_container .container .service .contente{
+    margin: 0.8rem;
+}
+.segundo_container .container .service p{
+    line-height: 1.5rem;
+    font-size: 1.15rem;
+    margin: 0.5rem 0;
+}
+.segundo_container .container .service a{
+    color: #D0562F;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.segundo_container .container .service a:hover{
+    color: #82351d;
+}
+.segundo_container .container .service img{
+    width: 100%;
+    height: 100%;
+}
+.segundo_container .container .service:hover img{
+    transform: scale(1.1);
+
+}
+.segundo_container .container .service:hover .icons{
+    display: block;
+}
+
+.segundo_container .container .service{
+    border: 2px solid #552C1B;
+    position: relative;
+
+}
+.segundo_container .container .service .icons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    display: none;
+    
+}
+.segundo_container .container .service .icons i{
+    font-size: 1.5rem;
+    display: block;
+    padding: 0.8rem;
+    background-color: #ffffff;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.segundo_container .container .service .icons i:hover{
+    color: #FFBFB7;
+    background-color: #0D0801;
+
+
+}
+.segundo_container .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 3fr));
+    gap: 1rem;
+    margin: 0 4rem;
+
+}
+
+.terceiro_container .produtos .box img{
+    max-width: 100%;
+    width: 13rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.terceiro_container{
+    margin-top: 2.5rem;
+}
+.terceiro_container .produtos .box{
+    margin: 0 2.5%;
+    flex: 1 1 13rem;
+    
+}
+.terceiro_container .produtos .box p{
+    line-height: 1.25rem;
+    margin: 0.3333rem 0 0.5rem;
+    font-size:1.05rem;
+}
+.terceiro_container .produtos .estrelas{
+    display: flex;
+    justify-content: center;
+    color: #D0562F;
+    font-size: 1.33rem;
+    margin: 0.5rem 0;
+}
+.terceiro_container .produtos .box h3{
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+}
+.terceiro_container .produtos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+    justify-content: center;
+}
+.terceiro_container .produtos .box span{
+    font-size: 1.5rem;
+    color: #D0562F;
+}
+.terceiro_container .produtos .box .small{
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.container_sobre{
+    background: url(/imagens/sobrebackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 3.5rem 0;
+    padding: 0 3%;
+
+}
+.container_sobre .texto_sobre{
+    width: 50%;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+}
+.container_sobre .texto_sobre p{
+    font-size: 1.17rem;
+    line-height: 1.7rem;
+
+}
+
+.terceiro_container .como_trabalhamos .content img{
+    max-width: 100%;
+    height: 20rem;
+    position: relative;
+    left: 50%;
+    transform:translateX(-50%);
+}
+.terceiro_container .como_trabalhamos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.terceiro_container .como_trabalhamos .content{
+    padding: 1rem 2rem;
+    flex: 1 1 25rem;
+}
+.terceiro_container .como_trabalhamos h3{
+    font-family: "futura";
+    font-size: 1.25rem;
+    margin: 0.4rem 0;
+}
+.terceiro_container .como_trabalhamos p{
+    font-size:1.1rem;
+    line-height: 1.40rem;
+}
+.quarto_container .box_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+}
+.quarto_container .box_container .box{
+    padding: 1.5rem 0.5rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-bottom: 1rem;
+    width: 100%;
+    flex:  1 1 20rem;
+}
+.quarto_container .box_container .box h5{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.quarto_container .box_container .box p{
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+.quarto_container .box_container .box .fa-solid{
+    font-size: 2rem;
+    margin: 0.4rem 0;
+    color: #FCFCFC;
+    background-color: #D0562F;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.quarto_container .box_container .box .fa-location-dot{
+    padding: 1rem 1.3rem;
+}
+.quarto_container .contato{
+    margin-top: 3rem;
+}
+
+
+@media(max-width: 1300px){
+    .primiro_container{
+        background-size: cover;
+    }
+    
+
+}
+@media(max-width: 798px){
+    .segundo_container .container{
+        margin: 0 3%;
+    
+    }
+    
+    .primiro_container header nav .links a{
+        display: block;
+        padding: 0.8rem 0;
+        color: #FCFCFC;
+    }
+    .primiro_container header nav .links{
+        position: fixed;
+        padding: 1.5rem 1rem;
+        top: 0;
+        left: -100%;
+        width: 13rem;
+        height: 100%;
+        background-color: #2F1E0C;
+        z-index: 70000;
+        
+    }
+    .primiro_container header nav .links.active{
+        left: 0;
+    }
+
+
+    .menu{
+        display: block;
+    }
+    .primiro_container nav a::before{
+        content: "";
+        height: 0rem;
+        width: 0;
+    }
+    
+    .primiro_container nav .especial::before{
+        content: "";
+        height: 0rem;
+        width: 0;
+    }
+
+
+    
+    .terceiro_container .produtos{
+        padding: 0rem;
+    }
+    .terceiro_container .produtos .box{
+        margin-bottom: 1.7rem;
+        
+    }
+    .container_sobre .texto_sobre{
+        width: 80%;
+        position: relative;
+        top: 0%;
+        transform: translateY(0%);
+    }
+    .container_sobre{
+        height: 100%;
+        margin: 3.5rem 0;
+        padding: 0 1.5rem;
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 465px){
+    .primiro_container nav a{
+        display: none;
+    
+    }
+    .primiro_container .content h2{
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    
+    
+    
+    }
+    .primiro_container img{
+        width: 4rem;
+    }
+    .menu{
+        font-size: 1.4rem;
+    }
+    .terceiro_container .produtos .box h3{
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: normal;
+        text-align: center;
+    }
+    .container_sobre .texto_sobre{
+        width: 100%;
+    }
+
+
+    
+
+}
