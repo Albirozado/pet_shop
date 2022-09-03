@@ -6,3 +6,11 @@ document.querySelector(".menu").onclick = () =>{
 onscroll = () =>{
     menu.classList.remove("active")
 }
+
+function loanding(){
+    document.querySelector(".loader").style.display = "none"
+    document.querySelector(".tudo").style.display = "block"
+
+}
+loanding()
+
