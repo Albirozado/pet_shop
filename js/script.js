@@ -12,5 +12,5 @@ function loanding(){
     document.querySelector(".tudo").style.display = "block"
 
 }
-loanding()
+
 
